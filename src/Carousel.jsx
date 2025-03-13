@@ -43,7 +43,7 @@ export default function Carousel({ imgList }) {
       return newIndexes;
     });
   };
-
+  //main content
   return (
     <div>
       <div className={styles.container}>
