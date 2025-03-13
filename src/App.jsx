@@ -20,6 +20,7 @@ function App() {
 
   return (
     <div>
+    <h1 style={{position:"absolute", top: "15%", left: "50%", transform: "translate(-50%,-15%)"}}>React Carousel</h1>
     <Carousel imgList = {imgList}/>
     </div>
   )
