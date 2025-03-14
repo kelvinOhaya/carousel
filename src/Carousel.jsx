@@ -24,8 +24,7 @@ export default function Carousel({ imgList }) {
     setCurrentIndexes((prevIndexes) => {
       let newIndexes = {};
       Object.keys(prevIndexes).forEach((key) => {
-        newIndexes[key] =
-          prevIndexes[key] === imgList.length - 1 ? 0 : prevIndexes[key] + 1;
+        newIndexes[key] = (prevIndexes[key] + 1) % imgList.length;
       });
       return newIndexes;
     });
